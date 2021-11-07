@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS DO NOT DELETE -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Font Awesome CDN ICONS LIBRARY-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!--Owl Carousel CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--CUSTOM CSS IMPORTANT!!-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Welcome To Story Analyzer</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid pad-nav">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo20.png" alt="SA logo" width="60" height="60" />
+          <!--<img class="img-fluid" src="images/logo20.png" alt="SA Logo" />-->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html"
+                >Log In</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dashboards
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn dark-red-bg" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--NAVBAR-->
+    <!--HERO SECTION-->
+    <div class="container-fluid hero">
+      <div class="row">
+        <!--LEFT RED COLUMN, TAKES UP 3-->
+        <div class="col-md-3 p-5 red-sidebar">
+          <h3 class="text-center">
+            Welcome Back,<br />
+            User!
+          </h3>
+          <div class="text-center p-5">
+            <i class="far fa-user fa-3x"></i>
+          </div>
+          <div class="text-center p-2 sidebar-flex">
+            <h5>Update Account Settings</h5>
+            <i class="fas fa-sliders-h"></i>
+          </div>
+          <div class="text-center p-2 sidebar-flex">
+            <h5>Add Other Analyzers</h5>
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <div class="text-center p-2 sidebar-flex">
+            <h5>Explore Analysis Commons</h5>
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+        <!--LEFT RED COLUMN, TAKES UP 3-->
+        <!--RIGHT COLUMN, TAKES UP 9-->
+        <div class="col-md-9 p-5">
+          <h2 class="home-title">What would you like to do today?</h2>
+          <div class="row card-row align-items-center">
+            <!--CARD 1-->
+            <div class="col-md-4">
+              <div class="card card-custom mt-2">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Upload a story</h4>
+                  <p class="card-text text-center mt-5">
+                    This is a description about this function
+                  </p>
+                  <hr />
+                  <div class="text-center mt-5">
+                    <i class="fas fa-file-upload fa-3x i-red"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--CARD 1-->
+            <!--CARD 2-->
+            <div class="col-md-4">
+              <div class="card card-custom mt-2">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Create A Story</h4>
+                  <p class="card-text text-center mt-5">
+                    This is a description about this function
+                  </p>
+                  <hr />
+                  <div class="text-center mt-5">
+                    <i class="fas fa-pencil-alt fa-3x i-red"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--CARD 2-->
+            <!--CARD 3-->
+            <div class="col-md-4">
+              <div class="card card-custom mt-2">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Analyze a story</h4>
+                  <p class="card-text text-center mt-5">
+                    This is a description about this function
+                  </p>
+                  <hr />
+                  <div class="text-center">
+                    <i class="fas fa-database fa-3x i-red mt-5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--CARD 3-->
+          </div>
+          <div class="row">
+            <div class="col learn-more">
+              <h5 class="learn-more">Learn More About Story analyzer</h5>
+              <i class="fas fa-level-down-alt fa-2x"></i>
+            </div>
+          </div>
+        </div>
+        <!--RIGHT COLUMN, TAKES UP 9-->
+      </div>
+    </div>
+    <!--HERO SECTION-->
+
+    <!--WHAT IS STORY ANAYLYZER-->
+    <div class="container-fluid custom-container what-is-sa">
+      <!--Row-->
+      <div class="row p-lg-5">
+        <div class="col-md-6 p-lg-5">
+          <h3 class="sub-title">What Is Story Analyzer?</h3>
+          <p>
+            Story Analyzer is an app that helps users visualize and understand a
+            story through the use of natural language processing (NLP) and data
+            visualization. Specifically, Story Analyzer uses Stanford’s CoreNLP
+            Java library for performing information extraction on a story, and
+            uses D3 and Google JavaScript visualization APIs to generate a
+            dashboard of results involving several interrelated data
+            visualizations.
+          </p>
+        </div>
+        <div class="col-md-6 p-lg-5">
+          <p>
+            The term “story” refers to a narrative that involves people, groups,
+            organizations, or other entities (subjects) performing actions that
+            can affect other people, organizations, or entities (objects). These
+            events occur in certain places and at certain times, and they may
+            include other contextual features of interest.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--WHAT IS STORY ANALYZER-->
+    <!--JUMBOTRON CAROUSEL-->
+    <div class="container-fluid g-0">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <div class="owl-carousel owl-theme">
+              <div class="item"><span class="placeholder w-100"></span></div>
+              <div class="item"><span class="placeholder w-100"></span></div>
+              <div class="item"><span class="placeholder w-100"></span></div>
+              <div class="item"><span class="placeholder w-100"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--JUMBOTRON CAROUSEL-->
+    <div class="container-fluid custom-container what-is-sa">
+      <!--ABOUT THE CREATOR-->
+      <div class="row p-lg-5">
+        <div class="col-md-6 p-lg-5">
+          <h3 class="sub-title">About the creator</h3>
+          <img class="img-fluid" src="images/dude.jpg" alt="dude" />
+        </div>
+        <div class="col-md-6 p-lg-5">
+          <p class="b-top mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            congue tempor tellus interdum ullamcorper. Ut vel congue mauris.
+            Curabitur dignissim, est a facilisis porttitor, turpis leo
+            vestibulum massa, nec ultricies lorem metus et massa. Praesent nunc
+            diam, fringilla id nunc in, feugiat facilisis nulla. Sed ultrices
+            ante tellus, sit amet bibendum ligula tincidunt non. Nam sodales
+            sapien quis felis tristique, luctus consectetur libero tempor.
+          </p>
+          <button type="button" class="btn btn-outline-secondary">
+            Secondary
+          </button>
+        </div>
+      </div>
+      <!--ABOUT THE CREATOR-->
+    </div>
+
+    <br />
+
+    <!--FOOTER-->
+    <div class="container-fluid">
+      <div class="row footer p-5">
+        <div class="col-md-4">
+          <h5><u>Contact</u></h5>
+          <p>fake@email.com</p>
+          <p>555-555-5555</p>
+        </div>
+        <div class="col-md-4">
+          <h5><u>Quick Links</u></h5>
+          <p>
+            <a href="#"></a>2020 Southeast Decision Science Institution
+            Presentation
+          </p>
+          <div class="d-flex justify-content-sm-start gap-2">
+            <p>YouTube</p>
+            <div class="justify-content-center">
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+          <p>Stanfold</p>
+          <p>D3</p>
+        </div>
+        <div class="col-md-4">
+          <h5><u>Terms and Conditions</u></h5>
+          <h5><u>Privacy Policy</u></h5>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+
+    <!--OWL CAROUSEL JS-->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //owl carousel
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoHeight: true,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+
+    <!-- Option 1: Bootstrap JavaScript DO NOT DELETE -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,300&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button a:hover {
+  color: lightblue;
+}
+.custom-container {
+  padding: 3.5vw;
+}
+.red-sidebar {
+  display: grid;
+  place-self: center;
+  background-color: #731230;
+  color: white;
+  min-height: 90vh;
+}
+.sidebar-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 1.5em;
+}
+
+.card-custom {
+  height: 28.125em;
+  border-radius: 20px;
+  padding: 5vw;
+  border: none;
+  background-color: #e3ebf8;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.card-custom:hover {
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero {
+  min-height: 90vh;
+}
+.card-row {
+  min-height: 70vh;
+}
+.jumbotron,
+.footer {
+  background-color: #731230;
+  color: white;
+}
+.jumbotron {
+  padding: 2em;
+  text-align: center;
+}
+.i-red {
+  color: #731230;
+}
+.card-title {
+  color: #136072;
+  font-weight: 600;
+}
+li a {
+  color: #136072 !important;
+}
+.home-title {
+  color: #731230;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+
+.what-is-sa {
+  background-color: #fffefa !important;
+}
+.sub-title {
+  color: #731230;
+  text-decoration: underline #136072;
+}
+.b-top {
+  border-top: solid 1px #136072;
+}
+
+.learn-more {
+  color: #136072;
+}
+.dark-red-bg {
+  background-color: #731230;
+  color: white;
+}
+
+.owl-nav {
+  color: white;
+  font-size: 2.5em;
+}
+.pad-nav {
+  padding: 0 5vw;
+}
+
+.nav-item {
+  font-size: 1.15em;
+}
